@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miauw Company</title>
+    <title>Sonya-Portfolio</title>
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css\style.css">
@@ -11,20 +11,20 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     
     <!-- Header Content -->
     <header class="main-header">
-        
         <!-- Logo Icon -->
         <div class="logo-icon"></div>
         
         <!-- Navigation Menu -->
         <nav class="flex">
-                <a class="border p-[4px]" rounded href="home-page">Home</a>
-                <a class="border p-[4px]" rounded href="our-profile-page">Our Profile</a>
-                <a class="border p-[4px]" rounded href="portfolio-page">Portfolio</a>
-                <a class="border p-[4px]" rounded href="message-us-page">Message Us</a>
+                <a class="border p-[5px]" rounded href="#home-page">Home</a>
+                <a class="border p-[5px]" rounded href="#skills-page">Skills</a>
+                <a class="border p-[5px]" rounded href="#portfolio-page">Portfolio</a>
+                <a class="border p-[5px]" rounded href="#message-us-page">Contact Me</a>
         </nav> 
 
     </header>
@@ -32,63 +32,184 @@
 
     <!-- Main Content -->
     <main>
+
         <!-- Section: Home Page -->
         <section id="home-page" class="min-h-[500px] text-center content-center">
-          <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
-          <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+          <h1 class="text-3xl md:text-4xl font-bold mb-3" id="welcome-speech"></h1>
+        
+          <div class="space-y-3 text-xl">
+            <p><strong>I'm Sonya Zannah</strong>
+              <br/> 6+ years in tech/banking as operations specialist | Building data skills for my next chapter</p>
+          </div>
+        
+          <p class="text-gray-600 mt-8 text-lg">
+            Explore my work and let's collaborate!
+          </p>
+
+          <!-- Background Image -->
+          <div class="bg-home"></div>
         </section>
 
-        <hr/>
+        <!-- Section: Skills Page -->
+<section id="skills-page" class="skills py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">Skills I'm Learning</h2>
+        <p class="text-lg text-gray-600 text-center mb-12">Currently building my data analysis toolkit</p>
+        
+        <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+            <!-- Python -->
+            <div class="skill-circle">
+                <div class="circle-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                </div>
+                <p class="skill-name">Python</p>
+            </div>
+            
+            <!-- SQL -->
+            <div class="skill-circle">
+                <div class="circle-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                </div>
+                <p class="skill-name">SQL</p>
+            </div>
+            
+            <!-- Excel -->
+            <div class="skill-circle">
+                <div class="circle-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/019/550/735/original/microsoft-excel-logo-icon-free-download-free-vector.jpg" alt="Excel">
+                </div>
+                <p class="skill-name">Excel</p>
+            </div>
+            
+            <!-- Tableau -->
+            <div class="skill-circle">
+                <div class="circle-logo">
+                    <img src="https://vectorseek.com/wp-content/uploads/2023/08/Tableau-Logo-Vector.svg-.png" alt="Tableau">
+                </div>
+                <p class="skill-name">Tableau</p>
+            </div>
+            
+            <!-- Power BI -->
+            <div class="skill-circle">
+                <div class="circle-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI">
+                </div>
+                <p class="skill-name">Power BI</p>
+            </div>
+            
+            <!-- R -->
+            <div class="skill-circle">
+                <div class="circle-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R Programming">
+                </div>
+                <p class="skill-name">R</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Section: Our Profile -->
-         <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-           <h2 class="text-xl font-bold">About Yama Company</h2>
-           <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
-         </section>
-
-        <hr/>
 
         <!-- Section: Portfolio -->
          <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-           <h2 class="text-xl font-bold">Our Portfolio</h2>
-           <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and creativity.</p>
+           <h2 class="text-xl font-bold">My Portfolio</h2>
+           <p class="mt-2">Here are some of my recent projects.</p>
+            <!-- Portfolio Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+              <!-- Portfolio Item 1 -->
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://agnitotechnologies.com/wp-content/uploads/2021/12/img2.png" alt="Project 1" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-lg font-bold mb-2">Project Title 1</h3>
+                <p class="text-gray-600">Coming Soon!</p>
+              </div>
+              <!-- Portfolio Item 2 -->
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/014/603/316/small_2x/metaverse-digital-world-technology-concept-young-woman-in-virtual-reality-glasses-connected-to-the-cyber-metaverse-simulation-innovation-network-experience-ar-gaming-futuristic-lifestyle-vector.jpg" alt="Project 2" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-lg font-bold mb-2">Project Title 2</h3>
+                <p class="text-gray-600">Coming Soon!</p>
+              </div>
+              <!-- Portfolio Item 3 -->
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://imgix.bustle.com/uploads/shutterstock/2020/12/14/75b66d97-1650-4547-8212-395d9fe4b9fb-shutterstock-1727997997.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg" alt="Project 3" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-lg font-bold mb-2">Project Title 3</h3>
+                <p class="text-gray-600">Coming Soon!</p>
+              </div>
+              <!-- Add more portfolio items as needed -->
          </section>
 
-        <hr/>
+    </main>    
 
-        <!-- Section: Message Us -->
-        <section id="message-us-page" class="min-h-[500px] p-8">
-          <header>
-            <h2 class="text-xl font-bold">Message Us</h2>
-            <p class="mt-2">Have questions or want to work with us? Send us a message and we'll respond soon.</p>
-          </header>
-        
-          <form>
+    <hr/>
+
+    <!-- Section: Message Us -->
+    <section id="message-us-page" class="min-h-[500px] p-8">
+      <header class="mb-8">
+        <h2 class="text-xl font-bold">Let's Work Together</h2>
+        <p class="mt-2">Available for new projects and opportunities. Contact me below and I'll get back to you shortly.</p>
+      </header>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Form Section -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-bold mb-4">Contact Form</h3>
+          <form id="contactForm">
+            <!-- Nama -->
             <div class="mb-4">
-              <label class="block mb-2" for="name">Name:</label>
-              <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+              <label class="block mb-2 font-medium" for="name">Nama</label>
+              <input class="w-full p-2 border rounded focus:border-blue-500 focus:outline-none" 
+                    type="text" id="name" name="name" placeholder="Enter your name" required />
             </div>
-        
+
+            <!-- Tanggal Lahir -->
             <div class="mb-4">
-              <label class="block mb-2" for="email">Email:</label>
-              <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+              <label class="block mb-2 font-medium" for="birthdate">Tanggal Lahir</label>
+              <input class="w-full p-2 border rounded focus:border-blue-500 focus:outline-none" 
+                    type="date" id="birthdate" name="birthdate" required />
             </div>
-        
+
+            <!-- Jenis Kelamin -->
             <div class="mb-4">
-              <label class="block mb-2" for="message">Message:</label>
-              <textarea class="w-full p-2 border rounded" id="message" name="message" rows="4"></textarea>
+              <label class="block mb-2 font-medium">Jenis Kelamin</label>
+              <div class="flex space-x-4">
+                <label class="flex items-center">
+                  <input type="radio" name="gender" value="Laki-Laki" class="mr-2" required />
+                  Laki-Laki
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="gender" value="Perempuan" class="mr-2" />
+                  Perempuan
+                </label>
+              </div>
             </div>
-        
-            <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+
+            <!-- Pesan -->
+            <div class="mb-6">
+              <label class="block mb-2 font-medium" for="message">Pesan</label>
+              <textarea class="w-full p-2 border rounded focus:border-blue-500 focus:outline-none" 
+                        id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+            </div>
+
+            <!-- ✅ PERBAIKAN: type="submit" -->
+            <button class="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition font-medium" 
+                    type="submit">
+              Submit
+            </button>
           </form>
-        </section>
+        </div>
 
-        <hr/>
-    </main>
+        <!-- Results Section -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-bold mb-4">Submitted Information</h3>
+          <div id="resultContent" class="min-h-[200px] flex items-center justify-center">
+            <p class="text-gray-500 text-center">No data submitted yet.<br>Form results will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <hr/>
     <!-- Footer Content -->
-    <footer>
-        <span>&copy;2025 Miauw Company</span>
+    <footer  class="main-footer">
+        <span>Copyright &copy;2025 by Sonya Zannah</span>
     </footer>
 
     <!-- Link to external JavaScript file -->   

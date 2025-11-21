@@ -3,7 +3,7 @@
     width: 75px;
     border-radius: 50%;
     background-color: lightgray;
-    background-image: url(https://img.lovepik.com/png/20231105/cute-kitten-cartoon-Kitten-cartoon-cartoon-animal-Cartoon-image_500066_wh1200.png);
+    background-image: url("https://www.shutterstock.com/image-vector/initial-letter-sz-logo-design-260nw-1663535764.jpg");
     background-size: cover;
 }
 
@@ -11,4 +11,121 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.main-footer {
+    margin: 0 20px 0px 20px; /* top, right, bottom, left */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bg-home {
+    background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1366&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    width: 100%;
+}
+
+/* Section Margin & Padding */
+section {
+    margin: 0 20px 40px 20px; /* top, right, bottom, left */
+    padding: 40px 0
+    ;
+}
+
+/* Container untuk konsistensi layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Margin */
+@media (max-width: 768px) {
+    section {
+        margin: 0 15px 30px 15px;
+        padding: 40px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        margin: 0 10px 20px 10px;
+        padding: 30px 0;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.skill-circle {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-circle:hover {
+    transform: translateY(-10px);
+}
+
+.circle-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 1rem;
+    border: 3px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.circle-logo:hover {
+    border-color: #3498db;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
+}
+
+.circle-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #2d3748;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .circle-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circle-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .flex.justify-center.gap-8 {
+        gap: 1.5rem;
+    }
 }
