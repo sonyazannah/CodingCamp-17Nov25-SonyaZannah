@@ -3,21 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Miauw Company</title>
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     
     <!-- Header Content -->
-    <header></header>
+    <header class="main-header">
+        
+        <!-- Logo Icon -->
+        <div class="logo-icon"></div>
+        
+        <!-- Navigation Menu -->
+        <nav class="flex">
+                <a class="border p-[4px]" rounded href="home-page">Home</a>
+                <a class="border p-[4px]" rounded href="our-profile-page">Our Profile</a>
+                <a class="border p-[4px]" rounded href="portfolio-page">Portfolio</a>
+                <a class="border p-[4px]" rounded href="message-us-page">Message Us</a>
+        </nav> 
+
+    </header>
+    <hr/>
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+        <!-- Section: Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+          <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+          <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr/>
+
+        <!-- Section: Our Profile -->
+         <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+           <h2 class="text-xl font-bold">About Yama Company</h2>
+           <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+         </section>
+
+        <hr/>
+
+        <!-- Section: Portfolio -->
+         <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+           <h2 class="text-xl font-bold">Our Portfolio</h2>
+           <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and creativity.</p>
+         </section>
+
+        <hr/>
+
+        <!-- Section: Message Us -->
+        <section id="message-us-page" class="min-h-[500px] p-8">
+          <header>
+            <h2 class="text-xl font-bold">Message Us</h2>
+            <p class="mt-2">Have questions or want to work with us? Send us a message and we'll respond soon.</p>
+          </header>
+        
+          <form>
+            <div class="mb-4">
+              <label class="block mb-2" for="name">Name:</label>
+              <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+            </div>
+        
+            <div class="mb-4">
+              <label class="block mb-2" for="email">Email:</label>
+              <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+            </div>
+        
+            <div class="mb-4">
+              <label class="block mb-2" for="message">Message:</label>
+              <textarea class="w-full p-2 border rounded" id="message" name="message" rows="4"></textarea>
+            </div>
+        
+            <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+          </form>
+        </section>
+
+        <hr/>
+    </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>
+        <span>&copy;2025 Miauw Company</span>
+    </footer>
 
     <!-- Link to external JavaScript file -->   
     <script src="js\script.js"></script>
